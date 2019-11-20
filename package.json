@@ -21,7 +21,7 @@
   ],
   "scripts": {
     "prepack": "npm run build",
-    "build": "tsc"
+    "build": "tsc  && cp -r assets ./dist/"
   },
   "repository": {
     "type": "git",
@@ -37,8 +37,7 @@
     "strict-uri-encode": "^2.0.0"
   },
   "files": [
-    "dist",
-    "assets"
+    "dist"
   ],
   "main": "dist/index.js",
   "typings": "dist/index",
